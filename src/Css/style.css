@@ -15,12 +15,28 @@ body{
     }
  } */
 
+=====
+
+section {
+    height: 200px;
+    
+}
+
+
 .navbar{
-    background-color: rgb(254, 206, 75);
+    background-color: rgb(238, 125, 49);
     margin: 0;
+
     padding: 30px 10px 0px 10px;
     display: flex;
     flex-direction: column;
+
+    padding: 30px ;
+    display: block;
+    position: relative;
+    /* display: flex; */
+    
+
     
 }
 
@@ -40,7 +56,14 @@ body{
     width: 50;
     height: 50;
     border-radius: 50%;
+
     
+=======
+    /* position: relative; */
+    top: -68px;
+    left: -20px;
+    margin: 30px;
+
 }
 
 
@@ -68,16 +91,26 @@ body{
 
 .middle__container {
     display: flex;
+
     justify-content: space-between;
     align-items: center;
     /* border: 1px solid black; */
     margin-top: 10px;
 }
+=======
+    /* justify-content: none; */
+}
+.container h4{
+    margin: 20px 60px  0 ;
+    font-size: 25px;
+    /* position: relative;; */
+
 
 .middle__left {
     display: flex;
     gap: 0.5rem;
 }
+
 
 .middle__left span{
     height: 30px;
@@ -86,6 +119,20 @@ body{
     border-radius: 50%;
     margin-top:10px ;
 }
+=======
+/* .search-btn span{
+    font-size: 20px;
+    color: #000000;
+    position: relative;
+    top: -132px;
+    left: 0px;
+    right: -800px;
+    height: 60px;
+    width: 60px;
+    display: block;
+    background: #fff;
+} */
+
 
 .middle__left span:hover{
     background-color: rgb(0 0 0 / 0.1);
