@@ -1,16 +1,16 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arya's Newsletter</title>
-    <link
+    <!-- <link
       rel="website-icon"
       type="img"
       href="assets\Minimalist Digital Service Developer Logo.png"
-    />
+    /> -->
     <!-- <link rel="stylesheet" href="src\Css\style.css" /> -->
-    <!-- <link rel="stylesheet" href="src\Css\main.css" /> -->
+    <link rel="stylesheet" href="src\Css\main.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
@@ -23,56 +23,88 @@
       rel="stylesheet"
       href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"
     />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
+
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    
 
-  </head>
-  <body>
-    <section class="navbar">
-      <div class="container">
-      <div class="top__container">
-        <div class="left__top">
-          <img src="assets\IMG_20220211_212016_623.jpg" alt="logo" />
-          <h4>Arya's Newsletter</h4>
-        </div>
-        <div class="right__top">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg nav-color navbar-dark ">
+        <div class="container">
+            <a href="#" class="navbar-brand title">Stylnode</a>
 
-      <div class="middle__container">
-          <div class="middle__left">
-            <span></span><span></span><span></span><span></span>
-          </div>
-          <div class="middle__right">
-          <button class="btn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" enable-background="new 0 0 32 32" viewBox="0 0 32 32" id="smile"><circle cx="16" cy="16" r="13.5" fill="#FFF176"></circle><path fill="#455A64" d="M18.5 14c-.276 0-.5-.224-.5-.5 0-1.93 1.57-3.5 3.5-3.5 1.464 0 2.785.923 3.288 2.297.095.26-.039.547-.298.642-.259.094-.547-.039-.642-.298C23.489 11.659 22.546 11 21.5 11c-1.378 0-2.5 1.121-2.5 2.5C19 13.776 18.776 14 18.5 14zM13.5 14c-.276 0-.5-.224-.5-.5 0-1.379-1.122-2.5-2.5-2.5-1.029 0-1.968.646-2.336 1.606-.099.258-.388.388-.646.288-.258-.099-.387-.388-.288-.646C7.745 10.903 9.06 10 10.5 10c1.93 0 3.5 1.57 3.5 3.5C14 13.776 13.776 14 13.5 14z"></path><path fill="#E6D96A" d="M27.962,9.756c0.343,1.19,0.538,2.443,0.538,3.744C28.5,20.956,22.456,27,15,27
-              c-5.201,0-9.708-2.946-11.963-7.256C4.662,25.376,9.845,29.5,16,29.5c7.456,0,13.5-6.044,13.5-13.5
-              C29.5,13.745,28.94,11.625,27.962,9.756z"></path><path fill="#FFF5A2" d="M3,17.5C3,10.044,9.044,4,16.5,4c5.664,0,10.505,3.491,12.509,8.436
-              C27.443,6.712,22.22,2.5,16,2.5C8.544,2.5,2.5,8.544,2.5,16c0,1.792,0.357,3.5,0.991,5.064C3.18,19.927,3,18.735,3,17.5z"></path><path fill="#455A64" d="M16,30C8.28,30,2,23.72,2,16S8.28,2,16,2s14,6.28,14,14S23.72,30,16,30z M16,3
-              C8.832,3,3,8.832,3,16s5.832,13,13,13s13-5.832,13-13S23.168,3,16,3z"></path><path fill="#455A64" d="M16 22c-5.968 0-8.779-3.543-8.896-3.694-.168-.218-.129-.53.089-.7.219-.168.533-.13.701.088C7.92 17.726 10.544 21 16 21c5.483 0 8.079-3.272 8.104-3.306.169-.219.483-.258.702-.09.218.169.258.483.089.701C24.779 18.457 21.968 22 16 22zM23.502 8.5c-.042 0-.083-.005-.125-.016C23.358 8.479 21.48 8 20.001 8c-.276 0-.5-.224-.5-.5s.224-.5.5-.5c1.607 0 3.543.495 3.625.516.267.069.428.342.359.609C23.927 8.351 23.724 8.5 23.502 8.5zM8.5 8.5c-.223 0-.427-.15-.484-.377-.068-.268.094-.54.361-.607C8.46 7.494 10.424 7 12 7c.276 0 .5.224.5.5S12.276 8 12 8c-1.449 0-3.358.479-3.377.484C8.582 8.495 8.541 8.5 8.5 8.5z"></path></svg>
-            <small style="font-size: 14px">Follow</small></button>
-          <span></span>
-        </div>
-      </div>
+            <button 
+            class="material-symbols-outlined bg-dark text-light " 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navmenu"
 
-        <div class="down__container">
-          <li>Home</li>
-          <li>LifeStyle</li>
-          <li>Github</li>
-          <li>LinkedIn</li>
-          <li>CProgramming</li>
-          <li>web3</li>
-          <li>Newsletter</li> 
+            id="button"
+            >
+            reorder
+            <!-- <span class="">reorder</span>
+            <span class="bi bi-list"></span> -->
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#About" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Blogs" class="nav-link">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Newsletter" class="nav-link">Newsletter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Contacts" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
+    </nav>
+    <section class="intro text-light p-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-cemter justify-content-between ">
+                <div>
+                    <h1 class="pb-3 ">
+                        <span>A</span>
+                        <span>R</span>
+                        <span>Y</span>
+                        <span class="name">A</span>
+                        <span>B</span>
+                        <span>A</span>
+                        <span>S</span>
+                        <span>U</span>
+                    </h1>
+                    <h2 style="color:#fff">I'm <span class="typing" style="color:#12D640"></span></h2>
+                    <!-- <nav class="nav-menu d-none d-lg-block"></nav> -->
+                    <p class="lead my-4">I'm Arya Basu I'm currently pursuing Computer Applications. I have worked on various open source projects as well as some private repositories. My expertise are python, java, html, javascript, css.</p>
+                    <div class="button-btn">
+                        <button data-bs-target="#Contacts" class="button">Contact</button>
+                    </div>
+                </div>
+                <img class="img-fluid w-100 d-none d-sm-block" src="assets/icons8-office-worker.svg" alt="">
+            </div>
+        </div>
+        <!-- <div class = "image">
+         -->
+    </div>
     </section>
 
-    <div style="font-size: 50px;margin-top: 50px; text-align:center">Kemon lagtese?? </div>
-
+    <!--newsletter-->
+    <section></section>
+    
+    <script src="https://unpkg.co/typed.js@2.0.14/dist/typed.umd.js"></script>
+    
+    <script src="src/Js/index.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>;
-  </body>
+
+    
 </html>
