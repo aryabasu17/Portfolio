@@ -34,6 +34,8 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/bbdd82749b09ab7e38df417ca/a60fac88b050d77e955647bda.js");</script>
     
 
     
@@ -57,15 +59,15 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navmenu">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto nav-menu">
                     <li class="nav-item">
                         <a href="#about" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#Blogs" class="nav-link">Blogs</a>
+                        <a href="https://stylnode.com/" target="_blank" class="nav-link">Blogs</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#Newsletter" class="nav-link">Newsletter</a>
+                        <a href="https://stylnode.com/newsletter" target="_blank" class="nav-link" id="nav-link">Newsletter</a>
                     </li>
                     <li class="nav-item">
                         <a href="#Contacts" class="nav-link">Contact</a>
@@ -98,7 +100,9 @@
                     </span>
                     <div class="button-btn" id="button-btn">
                         <button data-bs-target="#Contacts" class="button">Contact</button>
-                        <button data-bs-target="#Blogs" class="button">Resume</button>  
+                        <button onclick="visitPage();" data-bs-target="#Blogs" class="button">Resume</button> 
+                        
+                         
                     </div>
                     <!-- <div class="icons mt-3  pt-3 align-items-center justify-content-center d-md-flex" id="icon">
                         <a href="#" class="icon icon--instagram">

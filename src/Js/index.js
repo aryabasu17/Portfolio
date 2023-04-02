@@ -22,3 +22,21 @@ valueNumbers.forEach((valueNumber) => {
     }
   }, duration);
 });
+
+function visitPage() {
+    window.location =
+      "https://drive.google.com/file/d/1j5zVdicwCTsxXpvP3-EgRDSHGY7IvbJM/view?usp=sharing";
+};
+
+// const link = document.getElementById("nav-link");
+// link.addEventListener("click", () => {
+//     link.style.color = 'gray';
+//     setTimeout(() => {
+//         link.style.color = 'white';
+//     }, 1000)
+// },
+// console.log(link),
+
+    // function visitPage() {
+    //     window.location = "https://stylnode.com/newsletter";
+    // },
