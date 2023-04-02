@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Heebo&display=swap');
 
 *{
     margin: 0;
@@ -54,6 +54,36 @@ background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(15,47,12,1) 0%, rgba(83,16,103,1) 100%);
 }
 
+.about-me{
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 20%, rgb(9, 22, 8) 50%, rgb(47, 32, 51) 100%);
+}
+
+.btn-more{
+  background-color:rgb(246, 247, 228);
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.btn-more:hover{
+  background-color:rgb(145, 146, 132);
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: medium;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.about{
+  font-family: 'Heebo', sans-serif;
+  font-size: large;
+  padding-bottom: 8px;
+}
+
 .exp{
   background-color: rgba(42,53,62,0.4);
   border-radius: 7px;
@@ -76,9 +106,9 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(15,47,12,1) 0%, rgba(
 
 .sub-title{
   color: #009bf9;
-  font-size: 11px;
+  font-size: 16px;
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%,-50%);
   -webkit-transform: translate(-50%,-50%);
