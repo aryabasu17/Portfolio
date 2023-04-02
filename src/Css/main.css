@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Heebo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Heebo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    /* box-sizing: border-box; */
-    font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 @media screen and (min-width: 990px) {
@@ -15,53 +15,74 @@
   }
 }
 
-
 .name {
   margin-right: 15px;
 }
 
-.news{
+.news {
   /* background-color:rgb(105, 23, 143) */
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(15,47,12,1) 0%, rgba(83,16,103,1) 100%);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(15, 47, 12, 1) 0%,
+    rgba(83, 16, 103, 1) 100%
+  );
 }
 
-@media(min-width: 768px){
-  #news-input{
+@media (min-width: 768px) {
+  #news-input {
     width: 50%;
   }
 }
 
-p{
+p {
   font-weight: 500px;
-  font-family:monospace;
+  font-family: monospace;
   font-weight: bold;
 }
 
 span {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.nav-color{
-background: rgb(2,0,36);
-background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(13,17,12,1) 66%, rgba(105,105,125,1) 100%, rgba(178,170,181,1) 100%);
+.nav-color {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    270deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(13, 17, 12, 1) 66%,
+    rgba(105, 105, 125, 1) 100%,
+    rgba(178, 170, 181, 1) 100%
+  );
 }
 
 .intro {
-  display : flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(15,47,12,1) 0%, rgba(83,16,103,1) 100%);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(15, 47, 12, 1) 0%,
+    rgba(83, 16, 103, 1) 100%
+  );
 }
 
-.about-me{
-  background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 20%, rgb(9, 22, 8) 50%, rgb(47, 32, 51) 100%);
+.about-me {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 20%,
+    rgb(9, 22, 8) 50%,
+    rgb(47, 32, 51) 100%
+  );
 }
 
-.btn-more{
-  background-color:rgb(246, 247, 228);
+.btn-more {
+  background-color: rgb(246, 247, 228);
   text-decoration: none;
   padding: 8px;
   border-radius: 5px;
@@ -69,8 +90,8 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 20%, rgb(9, 22, 8) 50%, rgb(47
   font-weight: bold;
 }
 
-.btn-more:hover{
-  background-color:rgb(145, 146, 132);
+.btn-more:hover {
+  background-color: rgb(145, 146, 132);
   text-decoration: none;
   padding: 8px;
   border-radius: 5px;
@@ -79,33 +100,36 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 20%, rgb(9, 22, 8) 50%, rgb(47
   color: rgb(0, 0, 0);
 }
 
-.section-title h3{
-  font-family:'Times New Roman', Times, serif;
+.section-title h3 {
+  font-family: "Times New Roman", Times, serif;
   font-size: 35px;
   font-weight: bold;
   color: rgb(255, 255, 255);
 }
 
-.nav-menu a:link, .nav-menu a:visited{
+.nav-menu a:link,
+.nav-menu a:visited {
   color: gray;
 }
 
-.nav-menu a:hover, .nav-menu a:active{
+.nav-menu a:hover,
+.nav-menu a:active {
   color: white;
 }
 
-#nav-link{
+#nav-link {
   cursor: pointer;
 }
 
-.about{
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.about {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 20px;
   padding-bottom: 8px;
 }
 
-.exp{
-  background-color: rgba(42,53,62,0.4);
+.exp {
+  background-color: rgba(42, 53, 62, 0.4);
   border-radius: 7px;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
@@ -114,50 +138,47 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 20%, rgb(9, 22, 8) 50%, rgb(47
   box-shadow: 0px 30px 45px rgba(22, 22, 22, 0.15);
 }
 
-.exp-number{
+.exp-number {
   margin-top: 20px;
   margin-bottom: -3px;
 }
 
-.section-title{
+.section-title {
   padding-bottom: 4rem;
   position: relative;
 }
 
-.sub-title{
+.sub-title {
   color: #009bf9;
   font-size: 16px;
   position: absolute;
   top: 45%;
   left: 50%;
-  transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  -moz-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 }
 
 /* .wrapper{
   width: 700px;
   margin-left: 200px ;
 } */
-.button-btn{
+.button-btn {
   display: flex;
   column-gap: 20px;
 }
-  
 
-
-
-#button-btn button  {
+#button-btn button {
   --text-base: 116deg, 55%, 40%;
   --text-hover: 116deg, 72%, 86%;
   --shadow-start: 52deg, 100%, 72%;
   --shadow-end: 282deg, 90%, 50%;
   --shadow-inner: 116deg, 90%, 62%;
   all: unset;
-  color: hsla(var(--text-base), );
-  font: 700 1.125rem/1.2 'Poppins', sans-serif;
+  color: hsla(var(--text-base));
+  font: 700 1.125rem/1.2 "Poppins", sans-serif;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   text-align: center;
@@ -172,7 +193,8 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 20%, rgb(9, 22, 8) 50%, rgb(47
   position: relative;
   transition: 0.25s ease-out;
 }
-#button-btn button::before, #button-btn button::after {
+#button-btn button::before,
+#button-btn button::after {
   content: "";
   border-radius: inherit;
   transition: inherit;
@@ -183,23 +205,33 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 20%, rgb(9, 22, 8) 50%, rgb(47
 #button-btn button::before {
   inset: -0.2em;
   z-index: -1;
-  background: linear-gradient(hsla(var(--shadow-start), 1), hsla(var(--shadow-end), 1));
+  background: linear-gradient(
+    hsla(var(--shadow-start), 1),
+    hsla(var(--shadow-end), 1)
+  );
   filter: blur(1.2em) saturate(1.2);
   transform-origin: bottom;
   transform: scaleY(0.5);
   opacity: 0;
 }
 #button-btn button::after {
-  box-shadow: inset 0 0 0 1px #fff, 0 0 0 4px rgba(255, 255, 255, 0.7), 1px 1px 0 4px #ffffff;
+  box-shadow: inset 0 0 0 1px #fff, 0 0 0 4px rgba(255, 255, 255, 0.7),
+    1px 1px 0 4px #ffffff;
   mix-blend-mode: overlay;
   opacity: 0;
 }
-#button-btn button:hover, #button-btn button:focus {
+#button-btn button:hover,
+#button-btn button:focus {
   color: hsla(var(--text-hover), 1);
   border-color: transparent;
-  box-shadow: inset 0 1.4em 0 hsla(var(--shadow-inner), 0.1), inset 0 0 1.4em hsla(var(--shadow-inner), 0.32), 0 1px 1px hsla(var(--shadow-inner), 0.32);
+  box-shadow: inset 0 1.4em 0 hsla(var(--shadow-inner), 0.1),
+    inset 0 0 1.4em hsla(var(--shadow-inner), 0.32),
+    0 1px 1px hsla(var(--shadow-inner), 0.32);
 }
-#button-btn button:hover::before, #button-btn button:hover::after, #button-btn button:focus::before, #button-btn button:focus::after {
+#button-btn button:hover::before,
+#button-btn button:hover::after,
+#button-btn button:focus::before,
+#button-btn button:focus::after {
   transform: none;
   opacity: 1;
 }
@@ -292,20 +324,19 @@ body,
 	}
 } */
 
-.button-btn{
+.button-btn {
   display: inline-flex;
-  
 }
 
-#button-res button  {
+#button-res button {
   --text-base: 116deg, 55%, 40%;
   --text-hover: 116deg, 72%, 86%;
   --shadow-start: 52deg, 100%, 72%;
   --shadow-end: 282deg, 90%, 50%;
   --shadow-inner: 116deg, 90%, 62%;
   all: unset;
-  color: hsla(var(--text-base), );
-  font: 700 1.125rem/1.2 'Poppins', sans-serif;
+  color: hsla(var(--text-base));
+  font: 700 1.125rem/1.2 "Poppins", sans-serif;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   text-align: center;
@@ -320,7 +351,8 @@ body,
   position: relative;
   transition: 0.25s ease-out;
 }
-#button-res button::before, #button-res button::after {
+#button-res button::before,
+#button-res button::after {
   content: "";
   border-radius: inherit;
   transition: inherit;
@@ -331,23 +363,33 @@ body,
 #button-res button::before {
   inset: -0.2em;
   z-index: -1;
-  background: linear-gradient(hsla(var(--shadow-start), 1), hsla(var(--shadow-end), 1));
+  background: linear-gradient(
+    hsla(var(--shadow-start), 1),
+    hsla(var(--shadow-end), 1)
+  );
   filter: blur(1.2em) saturate(1.2);
   transform-origin: bottom;
   transform: scaleY(0.5);
   opacity: 0;
 }
 #button-res button::after {
-  box-shadow: inset 0 0 0 1px #fff, 0 0 0 4px rgba(255, 255, 255, 0.7), 1px 1px 0 4px #ffffff;
+  box-shadow: inset 0 0 0 1px #fff, 0 0 0 4px rgba(255, 255, 255, 0.7),
+    1px 1px 0 4px #ffffff;
   mix-blend-mode: overlay;
   opacity: 0;
 }
-#button-res button:hover, #button-res button:focus {
+#button-res button:hover,
+#button-res button:focus {
   color: hsla(var(--text-hover), 1);
   border-color: transparent;
-  box-shadow: inset 0 1.4em 0 hsla(var(--shadow-inner), 0.1), inset 0 0 1.4em hsla(var(--shadow-inner), 0.32), 0 1px 1px hsla(var(--shadow-inner), 0.32);
+  box-shadow: inset 0 1.4em 0 hsla(var(--shadow-inner), 0.1),
+    inset 0 0 1.4em hsla(var(--shadow-inner), 0.32),
+    0 1px 1px hsla(var(--shadow-inner), 0.32);
 }
-#button-res button:hover::before, #button-res button:hover::after, #button-res button:focus::before, #button-res button:focus::after {
+#button-res button:hover::before,
+#button-res button:hover::after,
+#button-res button:focus::before,
+#button-res button:focus::after {
   transform: none;
   opacity: 1;
 }
