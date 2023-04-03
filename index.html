@@ -34,8 +34,6 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-
-    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/bbdd82749b09ab7e38df417ca/a60fac88b050d77e955647bda.js");</script>
     
 
     
@@ -100,7 +98,7 @@
                     </span>
                     <div class="button-btn" id="button-btn">
                         <button data-bs-target="#Contacts" class="button">Contact</button>
-                        <button onclick="visitPage();" data-bs-target="#Blogs" class="button">Resume</button> 
+                        <button onclick="gotoLink(this)" value="https://drive.google.com/file/d/1j5zVdicwCTsxXpvP3-EgRDSHGY7IvbJM/view?usp=sharing" data-bs-target="#Blogs" class="button">Resume</button> 
                         
                          
                     </div>
@@ -132,9 +130,9 @@
         <div class="container">
             <div class="d-md-flex justify-content-between align-items-center">
                 <h3 class="mb-3 mb-md-0 animate__animated animate__fadeInLeft animate_fast" >Sign Up For My Newsletter</h3>
-                <div class="input-group" id="news-input">
-                    <input type="text" class="form-control" placeholder="Enter Email" >
-                    <button class="btn btn-dark btn-lg" type="button">Button</button>
+                <div class="input-group" id="news-input" name="submit-to-google-sheet">
+                    <input type="email" name="Email" class="form-control" placeholder="Enter Email" required>
+                    <button class="btn btn-dark btn-lg" type="button">Submit</button>
                 </div>
             </div>
         </div> 
@@ -203,5 +201,16 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>;
 
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzO1rondP1gdna4tjaGjkLADVeaCg138DxanAWwLgYIW4iUoGooJ9cq_uSHAJJMCCOy/exec';
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
     
 </html>

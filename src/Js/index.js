@@ -23,10 +23,13 @@ valueNumbers.forEach((valueNumber) => {
   }, duration);
 });
 
-function visitPage() {
-    window.location =
-      "https://drive.google.com/file/d/1j5zVdicwCTsxXpvP3-EgRDSHGY7IvbJM/view?usp=sharing";
-};
+// function visitPage() {
+//     window.location =
+//       "https://drive.google.com/file/d/1j5zVdicwCTsxXpvP3-EgRDSHGY7IvbJM/view?usp=sharing";
+// };
+
+
+
 
 // const link = document.getElementById("nav-link");
 // link.addEventListener("click", () => {
@@ -40,3 +43,8 @@ function visitPage() {
     // function visitPage() {
     //     window.location = "https://stylnode.com/newsletter";
     // },
+
+
+function gotoLink(link) {
+  location.href = 'https://drive.google.com/file/d/1j5zVdicwCTsxXpvP3-EgRDSHGY7IvbJM/view?usp=sharing';
+};
