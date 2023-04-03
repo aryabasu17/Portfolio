@@ -24,12 +24,16 @@ valueNumbers.forEach((valueNumber) => {
 });
 
 // function visitPage() {
-//     window.location =
-//       "https://drive.google.com/file/d/1j5zVdicwCTsxXpvP3-EgRDSHGY7IvbJM/view?usp=sharing";
+//   window.location = "https://drive.google.com/file/d/1j5zVdicwCTsxXpvP3-EgRDSHGY7IvbJM/view?usp=sharing";
 // };
 
+const btnopen = document.querySelector('#resume');
 
+btnopen.addEventListener('click',(event) => {
+  window.open('https://drive.google.com/file/d/1j5zVdicwCTsxXpvP3-EgRDSHGY7IvbJM/view?usp=sharing', '_top');
 
+  
+});
 
 // const link = document.getElementById("nav-link");
 // link.addEventListener("click", () => {
@@ -40,11 +44,7 @@ valueNumbers.forEach((valueNumber) => {
 // },
 // console.log(link),
 
-    // function visitPage() {
-    //     window.location = "https://stylnode.com/newsletter";
-    // },
 
-
-function gotoLink(link) {
-  location.href = 'https://drive.google.com/file/d/1j5zVdicwCTsxXpvP3-EgRDSHGY7IvbJM/view?usp=sharing';
-};
+// function gotoLink(link) {
+//   location.href = 'https://drive.google.com/file/d/1j5zVdicwCTsxXpvP3-EgRDSHGY7IvbJM/view?usp=sharing';
+// };
