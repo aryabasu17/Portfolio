@@ -80,7 +80,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 20%, rgb(9, 22, 8) 50%, rgb(47
 }
 
 .section-title h3{
-  font-family:'Times New Roman', Times, serif;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 35px;
   font-weight: bold;
   color: rgb(255, 255, 255);
@@ -124,11 +124,26 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 20%, rgb(9, 22, 8) 50%, rgb(47
   position: relative;
 }
 
+
+
 .sub-title{
   color: #009bf9;
   font-size: 16px;
   position: absolute;
   top: 45%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+}
+
+.sub-title-sk{
+  color: #009bf9;
+  font-size: 13px;
+  position: absolute;
+  top: 46%;
   left: 50%;
   transform: translate(-50%,-50%);
   -webkit-transform: translate(-50%,-50%);
@@ -350,4 +365,39 @@ body,
 #button-res button:hover::before, #button-res button:hover::after, #button-res button:focus::before, #button-res button:focus::after {
   transform: none;
   opacity: 1;
+}
+
+
+
+
+/*Skills Section*/
+
+.skill{
+  background: rgba(42,53,62,0.4);
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  cursor: pointer;
+  transition: all .40s;
+  -webkit-transition: all .40s;
+  -moz-transition: all .40s;
+  -ms-transition: all .40s;
+  -o-transition: all .40s;
+}
+
+.skill:hover{
+  transform: scale(1.12) rotate(-5deg);
+  -webkit-transform: scale(1.12) rotate(-5deg);
+  -moz-transform: scale(1.12) rotate(-5deg);
+  -ms-transform: scale(1.12) rotate(-5deg);
+  -o-transform: scale(1.12) rotate(-5deg);
+  box-shadow: 0px 10px 25px 10px rgba(9, 132, 206, 40%);
+}
+
+.python{
+  width: 72px;
+  height: 72px;
+  padding-bottom: 8px;
 }

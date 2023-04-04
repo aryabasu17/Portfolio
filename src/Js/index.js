@@ -1,4 +1,4 @@
-AOS.init();
+
 
 var typed = new Typed(" .typing", {
   strings: ["Developer", "Writer", "AI Enthusiast"],
@@ -27,13 +27,38 @@ valueNumbers.forEach((valueNumber) => {
 //   window.location = "https://drive.google.com/file/d/1j5zVdicwCTsxXpvP3-EgRDSHGY7IvbJM/view?usp=sharing";
 // };
 
-const btnopen = document.querySelector('#resume');
+const btnopen = document.querySelector("#resume");
 
-btnopen.addEventListener('click',(event) => {
-  window.open('https://drive.google.com/file/d/1j5zVdicwCTsxXpvP3-EgRDSHGY7IvbJM/view?usp=sharing', '_top');
-
-  
+btnopen.addEventListener("click", (event) => {
+  window.open(
+    "https://drive.google.com/file/d/1j5zVdicwCTsxXpvP3-EgRDSHGY7IvbJM/view?usp=sharing",
+    "_top"
+  );
 });
+
+document.getElementById("news-input").addEventListener("click", submitform);
+
+function submitform(e) {
+  e.preventDefault();
+
+  var email = getInputVal("Email");
+
+  console.log(email);
+
+  saveemail(email);
+}
+
+function saveemail(email) {
+  let newcontactinfo = contactInfo.push();
+
+  newcontactinfo.set({
+    email: email,
+  });
+}
+//function to get input val
+function getInputVal(id) {
+  return document.getElementById(id).value;
+}
 
 // const link = document.getElementById("nav-link");
 // link.addEventListener("click", () => {
@@ -44,7 +69,8 @@ btnopen.addEventListener('click',(event) => {
 // },
 // console.log(link),
 
-
 // function gotoLink(link) {
 //   location.href = 'https://drive.google.com/file/d/1j5zVdicwCTsxXpvP3-EgRDSHGY7IvbJM/view?usp=sharing';
 // };
+
+
