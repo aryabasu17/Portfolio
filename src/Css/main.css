@@ -87,11 +87,11 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 20%, rgb(9, 22, 8) 50%, rgb(47
 }
 
 .nav-menu a:link, .nav-menu a:visited{
-  color: gray;
+  color: whitesmoke;
 }
 
 .nav-menu a:hover, .nav-menu a:active{
-  color: white;
+  color: #12D640;
 }
 
 #nav-link{
