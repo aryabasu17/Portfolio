@@ -8,7 +8,7 @@
     "express": "^4.18.2",
     "mongoose": "^6.9.3"
   },
-  "name": "own-website",
+  "name": "Portfolio",
   "version": "1.0.0",
   "description": "simple app",
   "main": "src/Js/index.js",

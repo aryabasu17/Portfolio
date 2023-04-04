@@ -36,29 +36,29 @@ btnopen.addEventListener("click", (event) => {
   );
 });
 
-document.getElementById("news-input").addEventListener("click", submitform);
+// document.getElementById("news-input").addEventListener("click", submitform);
 
-function submitform(e) {
-  e.preventDefault();
+// function submitform(e) {
+//   e.preventDefault();
 
-  var email = getInputVal("Email");
+//   var email = getInputVal("Email");
 
-  console.log(email);
+//   console.log(email);
 
-  saveemail(email);
-}
+//   saveemail(email);
+// }
 
-function saveemail(email) {
-  let newcontactinfo = contactInfo.push();
+// function saveemail(email) {
+//   let newcontactinfo = contactInfo.push();
 
-  newcontactinfo.set({
-    email: email,
-  });
-}
-//function to get input val
-function getInputVal(id) {
-  return document.getElementById(id).value;
-}
+//   newcontactinfo.set({
+//     email: email,
+//   });
+// }
+// //function to get input val
+// function getInputVal(id) {
+//   return document.getElementById(id).value;
+// }
 
 // const link = document.getElementById("nav-link");
 // link.addEventListener("click", () => {
