@@ -70,6 +70,10 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(15,47,12,1) 0%, rgba(
   background: linear-gradient(90deg, rgba(2,0,36,1) 20%, rgb(9, 22, 8) 50%, rgb(47, 32, 51) 100%);
 }
 
+.projects{
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 20%, rgb(9, 22, 8) 50%, rgb(47, 32, 51) 100%);
+}
 
 
 .btn-more{
@@ -466,4 +470,16 @@ body,
   -ms-border-radius: 7px;
   -o-border-radius: 7px;
   padding: 20px 0;
+}
+
+#projects img{
+  width: 100%;
+  height: 350px;
+  cursor: pointer;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  object-fit: cover;
 }
