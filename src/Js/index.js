@@ -1,4 +1,4 @@
-
+AOS.init();
 
 var typed = new Typed(" .typing", {
   strings: ["Developer", "Writer", "AI Enthusiast"],
@@ -73,4 +73,13 @@ btnopen.addEventListener("click", (event) => {
 //   location.href = 'https://drive.google.com/file/d/1j5zVdicwCTsxXpvP3-EgRDSHGY7IvbJM/view?usp=sharing';
 // };
 
-
+document.addEventListener("click", function (e) {
+  if (e.target.classList.contains("gallery-item")) {
+    const src = e.target.getAttribute("src");
+    document.querySelector(".modal-img").src = src;
+    const myModal = new bootstrap.Modal(
+      document.getElementById("gallery-modal")
+    );
+    myModal.show();
+  }
+});

@@ -39,7 +39,7 @@
     
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg nav-color navbar-dark ">
+    <nav class="navbar navbar-expand-lg nav-color navbar-dark fixed-top">
         <div class="container">
             <a href="#" class="navbar-brand title">Stylnode</a>
 
@@ -75,7 +75,7 @@
         </div>
     </nav>
     <section class="intro text-light p-5 pb-20 text-center text-sm-start">
-        <div class="container">
+        <div class="container mt-5">
             <div class="d-sm-flex align-items-cemter justify-content-between grid gap-5">
                 <div>
                     <h1 class="pb-3 ">
@@ -269,7 +269,7 @@
         <div class="container">
             <div class="section-title ">
                 <h3 class="text-center  main-title">My Services</h3>
-                <p class="text-center fw-bold ms-2 ps-3 sub-title-sk">What am I doing?</p>
+                <p class="text-center fw-bold ms-4 ps-5 sub-title-sk">What am I doing?</p>
             </div>
             <div class="row">
                 <div class="col-lg-4 service-box text-center mt-3">
@@ -293,13 +293,13 @@
 
 
     <!--Projects-->
-    <section class="projects text-light pb-5 pt-5" id="projects">
-        <div class="comtainer">
+    <section class="projects text-light pb-5 pt-5 px-5" id="projects">
+        <div class="container">
             <div class="section-title ">
                 <h3 class="text-center  main-title">My Projects</h3>
                 <p class="text-center fw-bold ms-4 ps-5 sub-title-sk">What did I do?</p>
             </div>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 gy-4">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 gy-3 m-3 ">
                 <div class="col">
                     <img src="assets/work1.jpg" class="gallery-item image-fluid" alt="">
                 </div>
@@ -322,7 +322,93 @@
         </div>
     </section>
 
+    
 
+    <!--Modal-->
+    <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/work1.jpg" class="modal-img img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Contacts-->
+
+    <section class="contacts text-light pb-5 pt-5" id="projects">
+        <div class="container ">
+            <div class="section-title ">
+                <h3 class="text-center  main-title">Contact</h3>
+                <p class="text-center fw-bold ms-2 ps-5 sub-title-sk">Contact Me</p>
+            </div>
+            <div class="row gx-5">
+                <div class="col-lg-6 text-center">
+                    <div class="contact-bg d-flex flex-column justify-content-center rounded-2">
+                        <h4 class="py-3">You can contact me from the dialog box</h4>
+                        <div class="contact-info  ">
+                            <a href="tel:+917003757579" class="text-white"><i class="bi bi-telephone-fill">7003757579</i></a>
+                            <a href="mailto:arya@stylnode.com" class="text-white"><i class="bi bi-envelope-fill">arya@stylnode.com</i></a>
+                            <a href="#" class="text-white"><i class="bi bi-geo-alt-fill" >Kolkata/India</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="Name form-control" placeholder="Your Name and Surname">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="Your Email Address">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                        </div>
+                        <div class="mb-3 pb-3">
+                            <textarea class="form-control" placeholder="Enter your message" id="floatingTextarea" rows="10"></textarea>
+                        </div>
+                        <a href="" class="btn-send text-dark">Send</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Footer-->
+    <footer class="footer mt-5 py-5 pb-5 pt-5 text-light">
+        <div class="container">
+            <div class="footer-logo text-center text-light">
+                <h1 class="pb-3 ">
+                        <span>A</span>
+                        <span>R</span>
+                        <span>Y</span>
+                        <span class="name">A</span>
+                        <span class="text-warning">
+                            <span>B</span>
+                            <span>A</span>
+                            <span>S</span>
+                            <span>U</span>
+                        </span>
+                    </h1>
+            </div>
+            <div class="footer-social d-flex justify-content-center gap-3 text-center mt-3">
+                <a href="https://github.com/aryabasu17/"  class="text-white"><i class="bi bi-github"></i></a>
+                <a href="https://github.com/aryabasu17/"  class="text-white"><i class="bi bi-facebook"></i></a>
+                <a href="https://github.com/aryabasu17/"  class="text-white"><i class="bi bi-instagram"></i></a>
+                <a href="https://github.com/aryabasu17/"  class="text-white"><i class="bi bi-twitter"></i></a>
+                <a href="https://github.com/aryabasu17/"  class="text-white"><i class="bi bi-pencil-fill"></i></a>
+            </div>
+            <div class="footer-copyright text-center mt-3 mt-lg-2">
+                <p>Copyright @2023 Arya | Powered By Stylnode</p>
+            </div>
+        </div>
+    </footer>
     
     <script src="https://unpkg.co/typed.js@2.0.14/dist/typed.umd.js"></script>
 

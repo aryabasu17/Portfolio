@@ -1,12 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Heebo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap');
 
+
+/*green : #12D640*/
+
+
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     /* box-sizing: border-box; */
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+}
+
+body{
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 20%, rgb(9, 22, 8) 50%, rgb(47, 32, 51) 100%);
 }
 
 @media screen and (min-width: 990px) {
@@ -51,8 +60,8 @@ background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(13,17,12,1) 66%, rgb
   display : flex;
   justify-content: space-between;
   align-items: center;
-background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(15,47,12,1) 0%, rgba(83,16,103,1) 100%);
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(15,47,12,1) 0%, rgba(83,16,103,1) 100%);
 }
 
 .about-me{
@@ -75,6 +84,10 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(15,47,12,1) 0%, rgba(
   background: linear-gradient(90deg, rgba(2,0,36,1) 20%, rgb(9, 22, 8) 50%, rgb(47, 32, 51) 100%);
 }
 
+.contacts{
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 20%, rgb(9, 22, 8) 50%, rgb(47, 32, 51) 100%);
+}
 
 .btn-more{
   background-color:rgb(246, 247, 228);
@@ -143,7 +156,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(15,47,12,1) 0%, rgba(
 
 
 .sub-title{
-  color: #009bf9;
+  color: #12D640;
   font-size: 16px;
   position: absolute;
   top: 45%;
@@ -156,7 +169,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(15,47,12,1) 0%, rgba(
 }
 
 .sub-title-sk{
-  color: #009bf9;
+  color: #12D640;
   font-size: 13px;
   position: absolute;
   top: 46%;
@@ -409,8 +422,10 @@ body,
   -moz-transform: scale(1.12) rotate(-5deg);
   -ms-transform: scale(1.12) rotate(-5deg);
   -o-transform: scale(1.12) rotate(-5deg);
-  box-shadow: 0px 10px 25px 10px rgba(9, 132, 206, 40%);
+  box-shadow: 0px 10px 25px 10px rgba(9, 206, 52, 0.4);
 }
+
+
 
 .python{
   width: 72px;
@@ -463,7 +478,7 @@ body,
 }
 
 .service-box:hover{
-  background-image: linear-gradient(-45deg, #2763b8 0%, #2232dd 100%);
+  background-image: linear-gradient(-45deg, #27b84b 0%, #6f1dbb 100%);
   border-radius: 7px;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
@@ -482,4 +497,74 @@ body,
   -ms-border-radius: 7px;
   -o-border-radius: 7px;
   object-fit: cover;
+}
+
+.col{
+  transition: all .40s;
+  -webkit-transition: all .40s;
+  -moz-transition: all .40s;
+  -ms-transition: all .40s;
+  -o-transition: all .40s;
+
+}
+.col:hover{
+  transform: scale(1.15)
+}
+
+#gallery-modal .modal-img{
+  width: 100%;
+}
+
+.contact-bg{
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgb(42, 37, 136) 20%, rgb(143, 74, 161) 100%);
+  height: 50vh;
+  padding: 50px;
+}
+
+
+.contact-info a{
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 5px;
+}
+
+
+form input,textarea{
+  color: #F2FAFF!important;
+  background-color: #101820!important;
+  border: 3px solid rgba(42, 53, 62, 0.4)!important;
+}
+
+
+form .form-control::placeholder{
+  color: rgba(231, 230, 230, 0.4);
+}
+
+@media  screen and (max-width:974px) {
+  .contact-bg{
+    height: 40vh;
+  }
+}
+
+.btn-send{
+  background-color:rgb(123, 69, 184);
+  text-decoration: none;
+  padding: 8px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.btn-send:hover{
+  background-color:rgb(107, 86, 221);
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: medium;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
 }
