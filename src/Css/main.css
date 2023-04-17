@@ -25,6 +25,13 @@ body{
 }
 
 
+@media screen and (max-width:425px) {
+  #button-btn{
+    display: flex;
+    justify-content:center;
+  }
+}
+
 .name {
   margin-right: 15px;
 }
