@@ -569,3 +569,12 @@ form .form-control::placeholder{
   color: rgb(0, 0, 0);
 }
 
+#fa.c-lor{
+  background-color: #12D640;
+}
+
+.progress-bar{
+  -webkit-text-fill-color: #101820;
+  fill:#101820;
+  font-weight: bold;
+}
