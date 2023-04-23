@@ -53,8 +53,8 @@
     })(window,document,'script','dataLayer','GTM-WKBGRK6');</script>
     <!-- End Google Tag Manager -->
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6212257574824018"
-     crossorigin="anonymous"></script>
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6212257574824018"
+     crossorigin="anonymous"></script> -->
     
 </head>
 <body>
@@ -73,7 +73,7 @@
 
             id="button"
             >
-            reorder
+            
             <!-- <span class="">reorder</span>
             <span class="bi bi-list"></span> -->
             </button>
@@ -297,17 +297,17 @@
                 <div class="col-lg-4 service-box text-center mt-3">
                     <img src="assets/icons8-google-code-150.png" class="img-fluid mb-3 web" alt="web-design">
                     <h3 class="fw-bold mb-2">Web Dev</h3>
-                    <p class="p-2  align-items-center m-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quas accusamus aut dolore, voluptatum pariatur quidem? Possimus, dolor suscipit quidem sapiente, hic cum, architecto modi est commodi atque eum ratione.</p>
+                    <p class="p-2  align-items-center m-3">Welcome to my web development service! I offer expert solutions using HTML, CSS, JavaScript, Firebase, and Python. From sleek designs to seamless functionality, my services are tailored to meet your web development needs. Let's bring your vision to life with cutting-edge technology and expert coding.</p>
                 </div>
                 <div class="col-lg-4 service-box text-center mt-3">
                     <img src="assets/icons8-writer-male.svg" class="img-fluid mb-3 web" alt="web-design">
                     <h3 class="fw-bold mb-2">Content Writer</h3>
-                    <p class="p-2  align-items-center m-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quas accusamus aut dolore, voluptatum pariatur quidem? Possimus, dolor suscipit quidem sapiente, hic cum, architecto modi est commodi atque eum ratione.</p>
+                    <p class="p-2  align-items-center m-3">Welcome to my content writing service! I specialize in creating high-quality, engaging, and SEO-friendly content for businesses and individuals. From blog posts to website copy, our experienced writers provide compelling content that captures your audience's attention and helps you achieve your content marketing goals. Let us tell your story through words!</p>
                 </div>
                 <div class="col-lg-4 service-box text-center mt-3 gx-3">
                     <img src="assets/icons8-photographer.svg" class="img-fluid mb-3 web" alt="web-design">
                     <h3 class="fw-bold mb-2">Photography</h3>
-                    <p class="p-2  align-items-center m-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quas accusamus aut dolore, voluptatum pariatur quidem? Possimus, dolor suscipit quidem sapiente, hic cum, architecto modi est commodi atque eum ratione.</p>
+                    <p class="p-2  align-items-center m-3">Capturing the moments that matter. Offering photography services for events, and portraits. With a keen eye for detail and a passion for storytelling, I create stunning visuals that will last a lifetime. Let me capture your special moments with creativity and artistry.</p>
                 </div>
             </div>
         </div>
@@ -381,7 +381,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 mt-4">
-                    <form>
+                    <form action="" id="contactForm">
                         <div class="mb-3">
                             <input type="text" class="form-control" id="Name form-control" placeholder="Your Name and Surname">
                         </div>
@@ -394,7 +394,10 @@
                         <div class="mb-3 pb-3">
                             <textarea class="form-control" placeholder="Enter your message" id="floatingTextarea" rows="10"></textarea>
                         </div>
-                        <a href="" class="btn-send text-dark">Send</a>
+                        <div>
+                            <a type="submit" class="btn-send text-dark">Send</a>
+                        </div>
+                        
                     </form>
                 </div>
             </div>
@@ -434,9 +437,16 @@
     
     <script src="https://unpkg.co/typed.js@2.0.14/dist/typed.umd.js"></script>
 
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script> 
+    <!-- <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+    </script> -->
+
+    <script src="src/Js/db.js"></script>
+
     <script src="src/Js/index.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>;
-    
+
+</body>    
 </html>
