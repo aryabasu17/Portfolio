@@ -531,7 +531,7 @@ body,
 }
 
 
-.contact-info a{
+#c-form {
   text-decoration: none;
   display: flex;
   flex-direction: column;
@@ -539,6 +539,15 @@ body,
   padding: 5px;
 }
 
+#C-form a {
+  text-decoration: none;
+  color: #F2FAFF;
+}
+
+.phone{
+  padding: 10px!important;
+  text-align: left;
+}
 
 form input,textarea{
   color: #F2FAFF!important;
@@ -588,4 +597,9 @@ form .form-control::placeholder{
   -webkit-text-fill-color: #101820;
   fill:#101820;
   font-weight: bold;
+}
+
+
+.sub-t{
+  
 }
