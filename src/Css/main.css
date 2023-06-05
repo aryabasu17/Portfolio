@@ -600,6 +600,50 @@ form .form-control::placeholder{
 }
 
 
-.sub-t{
+/* .sub-t{
   
+} */
+
+.under_const h1{
+  color: #F2FAFF!important;
+  font-size: 40px;
+  font-weight: bold;
+  /* margin-top: 10px;
+  padding: 2px; */
+  z-index: 20;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.under-project{
+  /* background-color: #444547; */
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    );
+  background-image: url("../../assets/card-background.jpg");
+  background-size: cover;
+  opacity: 65%;
+  width: 88%;
+  height: 47%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center;
+  border-radius: 15px 0 15px;
+  z-index: -15;
+}
+
+.under_const h2{
+  color: #F2FAFF!important;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 5px;
+  z-index: 20;
+  text-align: center;
 }
