@@ -661,3 +661,7 @@ form .form-control::placeholder{
   -ms-transform: translate(50%,50%);
   -o-transform: translate(50%,50%);
 }
+
+.footer-base{
+  padding-top: 2px;
+}
