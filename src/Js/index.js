@@ -31,8 +31,7 @@ const btnopen = document.querySelector("#resume");
 
 btnopen.addEventListener("click", (event) => {
   window.open(
-    "https://drive.google.com/file/d/1j5zVdicwCTsxXpvP3-EgRDSHGY7IvbJM/view?usp=sharing",
-    "_top"
+    "https://drive.google.com/file/d/1HGRxQWf3aBovll4nbjfbaL0P7jlx4Xsl/view?usp=sharing"
   );
 });
 
