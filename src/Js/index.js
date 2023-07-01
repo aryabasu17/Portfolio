@@ -36,6 +36,19 @@ btnopen.addEventListener("click", (event) => {
   );
 });
 
+
+
+// const btn1open = document.querySelector("#more");
+
+// btnopen.addEventListener("click", (event) => {
+//   window.open(
+//     "https://www.linkedin.com/in/aryabasu21/",
+//     "_top"
+//   );
+// });
+
+
+
 // document.getElementById("news-input").addEventListener("click", submitform);
 
 // function submitform(e) {

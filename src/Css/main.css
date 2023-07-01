@@ -531,17 +531,24 @@ body,
 }
 
 
+
+
 #c-form {
   text-decoration: none;
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  text-align: center;
+  /* align-items: center; */
   padding: 5px;
 }
 
 #C-form a {
+  font-size: large;
   text-decoration: none;
   color: #F2FAFF;
+  padding: 4px;
+  justify-content:center !important;
+  text-align: left !important;
 }
 
 .phone{
@@ -654,12 +661,8 @@ form .form-control::placeholder{
 }
 
 .footer-social a i:hover{
-  font-size: 20px;
-  transform: translate(20%,10%);
-  -webkit-transform: translate(50%,50%);
-  -moz-transform: translate(50%,50%);
-  -ms-transform: translate(50%,50%);
-  -o-transform: translate(50%,50%);
+  font-size: 20px ;
+  transform: scale(2,2);
 }
 
 .footer-base{
