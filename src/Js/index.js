@@ -98,7 +98,7 @@ document.addEventListener("click", function (e) {
 });
 
 
-var comingdate = new Date("Jul 4, 2023 00:00:00");
+var comingdate = new Date("Jul 12, 2023 00:00:00");
 
 var d = document.getElementById("d");
 var h = document.getElementById("h");
