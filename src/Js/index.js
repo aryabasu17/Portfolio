@@ -50,41 +50,75 @@ btnopen.addEventListener("click", (event) => {
 
 
 // document.getElementById("news-input").addEventListener("click", submitform);
+// const scriptURL = 'https://script.google.com/macros/s/AKfycbwzjXtqvI0vbGuruMD22Q3YNM38MMGH3AK9f_9hRsYMgk17xYbszA7AYQ6u0qfXI4jkeQ/exec';
+// const form = document.forms['submit-to-google-sheet'];
+// const submit = document.getElementById("submit");
+// const snackbar = document.getElementById("snackbar");
+// const textarea = document.getElementById('textarea');
 
-// function submitform(e) {
+// // Function to toggle the notification
+// function toggleNotification() {
+//   snackbar.classList.toggle('hide');
+// }
+
+// // Function to show the notification
+// function showNotification(message) {
+//   const notificationText = snackbar.querySelector('.notification__body__first > p');
+//   notificationText.textContent = message;
+//   snackbar.classList.remove('hide');
+//   setTimeout(() => {
+//   snackbar.classList.add('hide');
+//   }, 3000); // Adjust the timeout duration as needed (in milliseconds)
+// }
+
+// submit.addEventListener('click', e => {
 //   e.preventDefault();
 
-//   var email = getInputVal("Email");
+//   const formData = new FormData(form);
+//   formData.append('message', textarea.value);
 
-//   console.log(email);
+//   fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+//       .then(() => {
+//         showNotification("Message sent!")
+//         form.reset();
+//       })
+//       .catch(error => console.error('Error!', error.message));
+// });
 
-//   saveemail(email);
-// }
 
-// function saveemail(email) {
-//   let newcontactinfo = contactInfo.push();
 
-//   newcontactinfo.set({
-//     email: email,
-//   });
-// }
-// //function to get input val
-// function getInputVal(id) {
-//   return document.getElementById(id).value;
-// }
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwzjXtqvI0vbGuruMD22Q3YNM38MMGH3AK9f_9hRsYMgk17xYbszA7AYQ6u0qfXI4jkeQ/exec';
+const form = document.forms['submit-to-google-sheet'];
+const submit = document.getElementById("submit");
+const snackbar = document.getElementById("snackbar");
+const textarea = document.getElementById('textarea');
 
-// const link = document.getElementById("nav-link");
-// link.addEventListener("click", () => {
-//     link.style.color = 'gray';
-//     setTimeout(() => {
-//         link.style.color = 'white';
-//     }, 1000)
-// },
-// console.log(link),
+// Function to toggle the notification
+function toggleNotification() {
+  snackbar.classList.toggle('hide');
+}
 
-// function gotoLink(link) {
-//   location.href = 'https://drive.google.com/file/d/1j5zVdicwCTsxXpvP3-EgRDSHGY7IvbJM/view?usp=sharing';
-// };
+submit.addEventListener('click', e => {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+  formData.append('message', textarea.value);
+
+  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    .then(() => {
+      snackbar.classList.remove('hide');
+      setTimeout(() => {
+        snackbar.classList.add('hide');
+      }, 3000); // Adjust the timeout duration as needed (in milliseconds)
+      form.reset();
+    })
+    .catch(error => console.error('Error!', error.message));
+});
+
+
+
+
+
 
 document.addEventListener("click", function (e) {
   if (e.target.classList.contains("gallery-item")) {
@@ -129,3 +163,32 @@ function getTrueNumber(x) {
 
 
 
+
+// newsletter
+
+
+const scripturl = 'https://script.google.com/macros/s/AKfycbyvqQ5Vq6OyeBVIRa1vCXkd37XOP47-ViIm_N3XkrHYIQiVpjigc9Rxi4jV2y3qZRDBvw/exec';
+const submit1 = document.getElementById("submit1");
+
+submit1.addEventListener('click', e => {
+    e.preventDefault();
+
+    const emailInput = document.querySelector('#news-input input[name="email"]');
+
+    if (emailInput) {
+        const emailValue = emailInput.value;
+
+        fetch(`${scripturl}?Email=${encodeURIComponent(emailValue)}`, { method: 'POST' })
+            .then(response => {
+                if (response.ok) {
+                    alert('Email submitted successfully!');
+                    emailInput.value = ''; // Clear the input field
+                } else {
+                    alert('Error submitting email.');
+                }
+            })
+            .catch(error => console.error('Error!', error.message));
+    } else {
+        console.error('Email input element not found.');
+    }
+});

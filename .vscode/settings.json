@@ -2,4 +2,7 @@
     "livePreview.defaultPreviewPath": "/index.html",
     "typescript.suggestionActions.enabled": false,
     "javascript.suggestionActions.enabled": false,
+    "cSpell.words": [
+        "canva"
+    ],
 }
