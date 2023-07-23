@@ -178,7 +178,7 @@ submit1.addEventListener('click', e => {
     if (emailInput) {
         const emailValue = emailInput.value;
 
-        fetch(`${scripturl}?Email=${encodeURIComponent(emailValue)}`, { method: 'POST' })
+        fetch(`${scripturl}?email=${encodeURIComponent(emailValue)}`, { method: 'POST' })
             .then(response => {
                 if (response.ok) {
                     alert('Email submitted successfully!');
