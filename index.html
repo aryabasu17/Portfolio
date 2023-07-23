@@ -4,34 +4,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
-      rel="Website Icon"
-      type="png"
-      href="assets/IMG_20230402_181214.png"/>
+        rel="Website Icon"
+        type="png"
+        href="assets/IMG_20230402_181214.png"/>
     <title>Arya's Portfolio</title>
     
     <!-- <link rel="stylesheet" href="src\Css\style.css" /> -->
     <link rel="stylesheet" href="src\Css\main.css" />
     <link rel="stylesheet" href="src\Css\under.css" />
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
     />
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
     <link
-      rel="stylesheet"
-      href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"
+        rel="stylesheet"
+        href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"
     />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
 
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
@@ -54,8 +54,13 @@
     })(window,document,'script','dataLayer','GTM-WKBGRK6');</script>
     <!-- End Google Tag Manager -->
 
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6212257574824018"
      crossorigin="anonymous"></script> -->
+
+
     
 </head>
 <body>
@@ -150,14 +155,15 @@
     <section class="news text-light p-5 pb-pt-10">
         <div class="container">
             <div class="d-md-flex justify-content-between align-items-center">
-                <h3 class="mb-3 mb-md-0 animate__animated animate__fadeInLeft animate_fast" >Sign Up For My Newsletter</h3>
-                <div class="input-group" id="news-input" name="submit-to-google-sheet">
-                    <input type="email" name="Email" class="form-control" placeholder="Enter Email" required>
-                    <button class="btn btn-dark btn-lg" type="submit">Submit</button>
+                <h3 class="mb-3 mb-md-0 animate__animated animate__fadeInLeft animate_fast">Sign Up For My Newsletter</h3>
+                <div class="input-group" id="news-input">
+                    <input type="email" name="email" class="form-control" placeholder="someone@gmail.com" required>
+                    <button class="btn btn-dark btn-lg" id="submit1">Submit</button>
                 </div>
             </div>
-        </div> 
+        </div>
     </section>
+    
 
 
 
@@ -323,7 +329,7 @@
                 <p class="text-center fw-bold ms-4 ps-5 sub-title-sk">What did I do?</p>
             </div>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 gy-3 m-3 ">
-                <div class="col">
+                <!-- <div class="col">
                     <img src="assets/work1.jpg" class="gallery-item image-fluid" alt="">
                 </div>
                 <div class="col">
@@ -340,7 +346,7 @@
                 </div>
                 <div class="col">
                     <img src="assets/work1.jpg" class="gallery-item image-fluid" alt="">
-                </div>
+                </div> -->
             </div>
         </div>
         
@@ -414,24 +420,60 @@
                     </div>
                 </div>
                 <div class="col-lg-6 mt-4">
-                    <form action="" id="contactForm">
+                    <form action="" id="contactForm" name="submit-to-google-sheet">
                         <div class="mb-3">
-                            <input type="text" class="form-control" id="Name form-control" placeholder="Your Name and Surname">
+                            <input type="text" name="name" class="form-control" id="Name form-control" placeholder="Your Name and Surname">
                         </div>
                         <div class="mb-3">
-                            <input type="email" class="form-control" id="email" placeholder="Your Email Address">
+                            <input type="email" name="email" class="form-control" id="email" placeholder="Your Email Address">
                         </div>
                         <div class="mb-3">
-                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                            <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject">
                         </div>
                         <div class="mb-3 pb-3">
-                            <textarea class="form-control" placeholder="Enter your message" id="floatingTextarea" rows="10"></textarea>
+                            <textarea id="textarea" class="form-control" name="message" placeholder="Enter your message" id="floatingTextarea" rows="10"></textarea>
                         </div>
                         <div>
-                            <a type="submit" class="btn-send text-dark">Send</a>
+                            <a type="submit" name="submit" id="submit"  class="btn-send text-dark"  onclick="toggleNotification()">Send</a>
                         </div>
-                        
                     </form>
+                    <!-- <span id="msg"></span> -->
+                    <!-- <div id="snackbar"></div> -->
+                    <div id="snackbar" class="notification hide none">
+                        <div class="notification__body">
+                            <span class="notification__body__first">
+                                <svg focusable="false" viewBox="0 0 24 24">
+                                <path
+                                    d="M20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,
+                                    8 0 0,1 12,4C12.76,4 13.5,4.11 14.2, 
+                                    4.31L15.77,2.74C14.61,2.26 13.34,2 
+                                    12,2A10,10 0 0,0 2,12A10,10 0 0,0 
+                                    12,22A10,10 0 0, 0 22,12M7.91,10.08L6.5,11.5L11,
+                                    16L21,6L19.59,4.58L11,13.17L7.91,10.08Z"
+                                ></path>
+                                </svg>
+                                <p>
+                                    Message sent successfully! &#128640;
+                                </p>
+                            </span>
+                            <svg
+                                onclick="toggleNotification()"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                stroke-width="2"
+                                stroke="currentColor"
+                                fill="none"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M18 6l-12 12"></path>
+                                <path d="M6 6l12 12"></path>
+                            </svg>
+                        </div>
+                    </div>    
                 </div>
             </div>
         </div>
@@ -470,12 +512,12 @@
     
     <script src="https://unpkg.co/typed.js@2.0.14/dist/typed.umd.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script> 
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>  -->
     <!-- <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
     </script> -->
 
-    <script src="src/Js/db.js"></script>
+    <!-- <script src="src/Js/db.js"></script> -->
 
     <script src="src/Js/index.js"></script>
 
