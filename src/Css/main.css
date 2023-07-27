@@ -125,14 +125,31 @@ background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(13,17,12,1) 66%, rgb
 
 .nav-menu a:link, .nav-menu a:visited{
   color: whitesmoke;
+  font-weight: medium;
 }
 
-.nav-menu a:hover, .nav-menu a:active{
-  color: #12D640;
+.nav-menu a:hover, .nav-menu a:focus{
+  font-weight:medium;
+  color: #59f16d;
 }
 
 #nav-link{
   cursor: pointer;
+}
+
+.nav-item a:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #12D640;
+  transition: 0.35s ease-in;
+  
+}
+
+.nav-item a:hover:after {
+  width: 100%;
+  
 }
 
 .about{
@@ -559,13 +576,27 @@ body,
 form input,textarea{
   color: #F2FAFF!important;
   background-color: #101820!important;
-  border: 3px solid rgba(42, 53, 62, 0.4)!important;
+  border: 1px solid rgba(69, 88, 104, 0.4)!important;
 }
 
 
 form .form-control::placeholder{
   color: rgba(231, 230, 230, 0.4);
 }
+
+#contactForm :where(input[type="text"],
+input[type="email"],
+textarea){
+  transition: transform 0.3s ease;
+}
+
+/* Add this style to adjust the position of the inputs when writing */
+#contactForm :where(input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus) {
+  transform: translate(-5px, -3px);
+}
+
 
 @media  screen and (max-width:974px) {
   .contact-bg{
@@ -574,26 +605,50 @@ form .form-control::placeholder{
 }
 
 .btn-send{
-  background-color:rgb(123, 69, 184);
+  /* background-color:rgb(123, 69, 184); */
+  border: 1px solid rgb(146, 148, 248);
   text-decoration: none;
+  overflow: hidden;
   width: 100px;
   padding: 8px;
   padding-top: 8px;
   text-align: center;
   margin-top: 10px;
-  border-radius: 5px;
+  position: relative;
+  border-radius: 2px;
   font-size: medium;
   font-weight: bold;
 }
 
-.btn-send:hover{
-  background-color:rgb(107, 86, 221);
+.btn-send:hover {
+  /* background-color:rgb(107, 86, 221);
   text-decoration: none;
   padding: 8px;
   border-radius: 5px;
   font-size: medium;
   font-weight: bold;
-  color: rgb(0, 0, 0);
+  color: white; */
+  box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+}
+
+.btn-send:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(146, 148, 248, 0.4),
+    transparent
+  );
+  transition: all 650ms;
+}
+
+.btn-send:hover:before {
+  left: 100%;
 }
 
 #fa.c-lor{
