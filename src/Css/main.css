@@ -772,6 +772,7 @@ textarea:focus) {
   gap: 8px;
 }
 
+
 .notification__body__first > svg {
   height: 24px;
   width: 24px;
@@ -785,6 +786,19 @@ textarea:focus) {
   margin: auto;
   min-width: 24px;
   min-height: 24px;
+}
+
+.notification__progress{
+  position: absolute;
+  left: 4px;
+  bottom: 4px;
+  width: calc(100% - 8px);
+  height:3px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: linear-gradient(to right, #313e2c , #aaec8a);
+  border-radius: 6px;
+  animation: progress 5.32s 0.3s linear;
 }
 
 @keyframes fadeInAnimation {
