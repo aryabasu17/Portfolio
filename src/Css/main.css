@@ -366,6 +366,7 @@ body,
   
 }
 
+
 #button-res button  {
   --text-base: 116deg, 55%, 40%;
   --text-hover: 116deg, 72%, 86%;
@@ -712,13 +713,13 @@ textarea:focus) {
 }
 
 .footer-social i{
-  transition: 0.3s ease;
+  transition: 0.3s ease-in-out;
 
 }
 
 .footer-social a i:hover{
   font-size: 20px ;
-  transform: scale(2,2);
+  transform: scaleX(2);
 }
 
 .footer-base{
@@ -739,7 +740,7 @@ textarea:focus) {
   display: flex;
   align-items: center;
   background-color: var(--success);
-  color: var(var(--text));
+  color: var(--text);
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
   opacity: 0;
   z-index: 10;
@@ -798,7 +799,7 @@ textarea:focus) {
   transform-origin: left;
   background: linear-gradient(to right, #313e2c , #aaec8a);
   border-radius: 6px;
-  animation: progress 5.32s 0.3s linear;
+  animation: progress 5.25s 0.3s linear;
 }
 
 @keyframes fadeInAnimation {
@@ -833,3 +834,9 @@ textarea:focus) {
   }
 }
 
+
+.error-message {
+  color: rgb(255, 0, 0) !important;
+  font-size: 12px;
+  font-weight: bold;
+}

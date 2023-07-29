@@ -49,7 +49,6 @@ btnopen.addEventListener("click", (event) => {
 
 
 
-// document.getElementById("news-input").addEventListener("click", submitform);
 // const scriptURL = 'https://script.google.com/macros/s/AKfycbwzjXtqvI0vbGuruMD22Q3YNM38MMGH3AK9f_9hRsYMgk17xYbszA7AYQ6u0qfXI4jkeQ/exec';
 // const form = document.forms['submit-to-google-sheet'];
 // const submit = document.getElementById("submit");
@@ -61,16 +60,6 @@ btnopen.addEventListener("click", (event) => {
 //   snackbar.classList.toggle('hide');
 // }
 
-// // Function to show the notification
-// function showNotification(message) {
-//   const notificationText = snackbar.querySelector('.notification__body__first > p');
-//   notificationText.textContent = message;
-//   snackbar.classList.remove('hide');
-//   setTimeout(() => {
-//   snackbar.classList.add('hide');
-//   }, 3000); // Adjust the timeout duration as needed (in milliseconds)
-// }
-
 // submit.addEventListener('click', e => {
 //   e.preventDefault();
 
@@ -78,44 +67,108 @@ btnopen.addEventListener("click", (event) => {
 //   formData.append('message', textarea.value);
 
 //   fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-//       .then(() => {
-//         showNotification("Message sent!")
-//         form.reset();
-//       })
-//       .catch(error => console.error('Error!', error.message));
+//     .then(() => {
+//       snackbar.classList.remove('hide');
+//       setTimeout(() => {
+//         snackbar.classList.add('hide');
+//       }, 3000); // Adjust the timeout duration as needed (in milliseconds)
+//       form.reset();
+//     })
+//     .catch(error => console.error('Error!', error.message));
 // });
-
-
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbwzjXtqvI0vbGuruMD22Q3YNM38MMGH3AK9f_9hRsYMgk17xYbszA7AYQ6u0qfXI4jkeQ/exec';
 const form = document.forms['submit-to-google-sheet'];
 const submit = document.getElementById("submit");
 const snackbar = document.getElementById("snackbar");
 const textarea = document.getElementById('textarea');
+const emailInput = form.elements['email'];
 
 // Function to toggle the notification
 function toggleNotification() {
   snackbar.classList.toggle('hide');
 }
 
+function showError(inputField, message) {
+  const errorElement = document.createElement('span');
+  errorElement.classList.add('error-message');
+  errorElement.textContent = message;
+  inputField.insertAdjacentElement('afterend', errorElement);
+  inputField.classList.add('invalid-input');
+}
+
+function hideError(inputField) {
+  const errorElement = inputField.nextElementSibling;
+  if (errorElement && errorElement.classList.contains('error-message')) {
+    errorElement.remove();
+  }
+  inputField.classList.remove('invalid-input');
+}
+
+function validateEmail(email) {
+  // Simple email validation using regex
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+}
+
+function validateForm() {
+  let isError = false;
+
+  // Check if textarea is filled
+  if (textarea.value.trim() === '') {
+    showError(textarea, 'Please fill in this field.');
+    isError = true;
+  } else {
+    hideError(textarea);
+  }
+
+  // Check if email field is filled and valid
+  const emailValue = emailInput.value.trim();
+  if (emailValue === '') {
+    showError(emailInput, 'Please fill in this field.');
+    isError = true;
+  } else if (!validateEmail(emailValue)) {
+    showError(emailInput, 'Please enter a valid email address.');
+    isError = true;
+  } else {
+    hideError(emailInput);
+  }
+
+  return !isError;
+}
+
 submit.addEventListener('click', e => {
   e.preventDefault();
 
-  const formData = new FormData(form);
-  formData.append('message', textarea.value);
+  const formInputs = form.querySelectorAll('input[name],textarea:not([type="submit"])');
+  let isFormValid = true;
 
-  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-    .then(() => {
-      snackbar.classList.remove('hide');
-      setTimeout(() => {
-        snackbar.classList.add('hide');
-      }, 3000); // Adjust the timeout duration as needed (in milliseconds)
-      form.reset();
-    })
-    .catch(error => console.error('Error!', error.message));
+  formInputs.forEach(input => {
+    hideError(input); // Clear any previous error messages
+
+    if (input.value.trim() === '') {
+      showError(input, 'Please fill in this field.');
+      isFormValid = false;
+    }
+  });
+
+  if (isFormValid && validateForm()) {
+    const formData = new FormData(form);
+    formData.append('message', textarea.value);
+
+    fetch(scriptURL, { method: 'POST', body: formData })
+      .then(() => {
+        snackbar.classList.remove('hide');
+        setTimeout(() => {
+          snackbar.classList.add('hide');
+        }, 3000); // Adjust the timeout duration as needed (in milliseconds)
+        form.reset();
+      })
+      .catch(error => console.error('Error!', error.message));
+  } else {
+    snackbar.classList.add('hide');
+  }
 });
-
-
 
 
 
@@ -132,7 +185,7 @@ document.addEventListener("click", function (e) {
 });
 
 
-var comingdate = new Date("Jul 30, 2023 00:00:00");
+var comingdate = new Date("Aug 10, 2023 00:00:00");
 
 var d = document.getElementById("d");
 var h = document.getElementById("h");
@@ -177,6 +230,13 @@ submit1.addEventListener('click', e => {
 
     if (emailInput) {
         const emailValue = emailInput.value;
+
+         // Email validation using regular expression
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(emailValue)) {
+            alert('Please enter a valid email address.');
+            return; // Exit the function if email is not valid
+        }
 
         fetch(`${scripturl}?email=${encodeURIComponent(emailValue)}`, { method: 'POST' })
             .then(response => {
